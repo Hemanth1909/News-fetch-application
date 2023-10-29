@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick News App</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="inside-nav-container container main-nav">
+            <a href="#" class="news-logo" onclick="relode()">
+                <img  src="assests/Quick News.png" class="news-logo"/>
+            </a>
+            <div class="list-elements">
+                <ul >
+                    <li class="hover-link list-element-one" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link list-element-one" id="world-cup" onclick="onNavItemClick('world-cup')">World Cup</li>
+                    <li class="hover-link list-element-one" id="business" onclick="onNavItemClick('business')">Business</li>
+                    <li class="hover-link list-element-one" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Type something here...." class="news-input" id="search-input"/>
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img"/>
+            </div>
+            <div class="cards-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 19/10/2023</h6>
+                <p class="news-desc" id="news-desc">a,bf vsd,vjeb thbdb hemanth bkjbs n l hvkjhlbhe lhvheheho gh hgjkhhb jghvj jgjg ljwjlf g kshg lsngjhg slhg laslgreoirhgo odgoehorh ois;lgjv oisjvosiovi</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+</html>
